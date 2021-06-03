@@ -22,8 +22,8 @@ function escribir() {
 }
 
 function leer() {
-	lista.innerHTML = "";
-	db.collection("alumnos").get().then((querySnapshot) => {
+	db.collection("alumnos").orderBy("nombre", "desc").onSnapshot((querySnapshot) => {
+		lista.innerHTML = "";
 	    querySnapshot.forEach((doc) => {
 			lista.innerHTML += "<p>Boleta: " + doc.id + " => { " +
 							   "Nombre: " + doc.data().nombre +
