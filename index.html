@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+	<script src="js/firebase.js"></script>
+	<title>Form</title>
+</head>
+<body>
+	<body class="col">
+	<header><p>LISTA</p></header>
+	<div class="row space-around">
+		<div class="grow1"></div>
+		<form id="form" action="javascript:;" method="post" class="col grow1" autocomplete="off">
+			<label for="boleta" class="atach">Boleta</label>
+			<input type="text" name="boleta" id="boleta" pattern="^([0-9])*$" title="Solo n&uacute;meros"  autofocus required />
+			<label for="nombre" class="atach">Nombre(s)</label>
+			<input type="text" name="nombre" id="nombre" pattern="^([a-zA-Z])*$" title="Solo letras" required />
+			<label for="grupo" class="atach">Grupo</label>
+			<input type="text" name="grupo" id="grupo" pattern="^([a-zA-Z0-9])*$" title="Solo letras y n&uacute;meros" required />
+			<label for="materia" class="atach">Materia</label>
+			<input type="text" name="materia" id="materia" pattern="^([a-zA-Z])*$" title="Solo letras" required />
+			<label for="fecha" class="atach">Fecha</label>
+			<input type="date" name="fecha" id="fecha" required />
+			<input type="submit" name="enviar" id="enviar" class="signup" value="Enviar">
+		</form>
+		<fieldset class="col grow4">
+			<legend>Alumnos</legend>
+			<output id="lista"></output>
+		</fieldset>
+		<div class="grow1"></div>
+	</div>
+	<footer>Copyright&copy; 2021 Salazar Flores Roberto</footer>
+	<script src="js/ctl.js"></script>
+</body>
+</html>
