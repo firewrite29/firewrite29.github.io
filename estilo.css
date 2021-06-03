@@ -1,0 +1,85 @@
+* {	box-sizing: border-box; }
+body {
+	width: 100%;
+	margin: 0;
+	font-family: Roboto;
+	background-color: #d1d1e0;
+	font-size: 20px;
+}
+header {
+	margin: 10px;
+	padding: 5px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #006600;
+	text-align: center;
+	letter-spacing: 5px;
+	/*text-shadow: 1px 1px 1px black,
+				 -1px -1px 1px black,
+				 -1px 1px 1px black,
+				 1px -1px 1px black;*/
+}
+input {
+	margin: 10px 0;
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 3px;
+	border: 3px solid grey;
+	outline: none;
+	transition: 0.4s;
+}
+input:focus {
+	border: 3px solid #006600;
+}
+input[type="submit"] {
+	margin: 15px 5px;
+	color: white;
+	background-color: #006600;
+	font-size: 25px;
+	border-radius: 5px;
+	border: 3px solid #006600;
+	outline: none;
+	cursor: pointer;
+	transition: 0.4s;
+}
+input[type="submit"]:hover {
+	color: #006600;
+	background-color: transparent;
+}
+footer {
+	margin: 20px;
+	text-align: center;
+	color: grey;
+}
+fieldset {
+	border: 3px solid #006600;
+	border-radius: 5px;
+}
+legend {
+	color: #006600;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+}
+.center {
+	justify-content: center;
+	align-items: center;
+}
+.space-around {
+	justify-content: space-around;
+}
+.grow1 {
+	margin: 10px;
+	padding: 10px;
+	flex-grow: 1;
+}
+.grow4 {
+	margin: 10px;
+	padding: 10px;
+	flex-grow: 4;
+}
